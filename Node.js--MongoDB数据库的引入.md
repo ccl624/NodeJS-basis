@@ -17,7 +17,7 @@ var mongoose = require("mongoose")
 
 ```
 //连接数据库
-//路径：mongodb://id地址:端口号/数据库名字
+//路径：mongodb://ip地址:端口号/数据库名字
 mongoose.connect("mongodb://127.0.0.1:27017/admin");//27017是服务器地址端口号如果是默认的可以不写，admin是目标数据库
 ```
 
@@ -41,4 +41,3 @@ mongoose.connection.once("close",function () {
   console.log("已经和数据库断开连接~~~");
 });
 ```
-
